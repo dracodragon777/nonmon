@@ -3,9 +3,7 @@ class Matrix {
     constructor(columns: Vector[]) {
         this._columns = columns;
     }
-    get columns() {
-        return this._columns;
-    }
+    get columns() { return this._columns; }
 
     public rows() {
         const matrix = this.columns[0].components.map((_, column) => this.columns.map(row => row.components[column]))
